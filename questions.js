@@ -2354,7 +2354,7 @@ vəsaitini (net cash flow) hesablayın. Qeyd – şirkət gəlir vergisi vermir
 		B: "emitentin illik müəssisə balansı və səhmdarların ümumi yığıncağının protokolu",
 		C: "emitentin illik müəssisə balansı və auditor rəyi",
 		D: "yalnız emitentin illik müəssisə balansı",
-		correct: "",
+		correct: "C",
 	},
 	{
 		question:
