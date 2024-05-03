@@ -1,0 +1,189 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+button {
+    cursor: pointer;
+}
+
+.correct {
+    background-color: rgb(0, 165, 41) !important;
+}
+
+.wrong {
+    background-color: rgb(245, 58, 58) !important;
+}
+
+.skipped {
+    background-color: #141269 !important;
+}
+
+.input-wrapper {
+    display: flex;
+    gap: 8px;
+}
+
+.input-wrapper input {
+    width: 100%;
+    padding: 4px;
+    outline: none;
+    border: 1px solid #1d1ba3;
+}
+
+.input-wrapper button {
+    background-color: #1d1ba3;
+    border: none;
+    color: white;
+}
+
+.quiz {
+    width: 90%;
+    margin: 64px auto;
+    background-color: #2260cb;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    padding: 16px 32px;
+}
+
+.step-2 {
+    background-color: white;
+    padding: 8px 16px;
+    border: none;
+}
+
+.step-3 {
+    width: 90%;
+    margin: 0 auto;
+    display: none;
+}
+
+.step-3 h3 {
+    color: white;
+    background-color: #1d1ba3;
+    padding: 8px 16px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.step-3 .options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+    margin-bottom: 32px;
+}
+
+.step-3 .options button {
+    flex: 0 0 calc(50% - 16px);
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 8px 0;
+    font-size: 18px;
+}
+
+.step-3 .options button:disabled {
+    cursor: not-allowed;
+}
+
+.step-3 .options button.selected {
+    background-color: rgb(0, 165, 41);
+}
+
+.step-3 .options button.wrong {
+    background-color: rgb(245, 58, 58);
+}
+
+.step-3 .controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.step-3 .controls .pages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+}
+
+.step-3 .controls .pages button {
+    border-radius: 50%;
+    height: 32px;
+    width: 32px;
+    border: none;
+    background-color: #1d1ba3;
+    color: white;
+}
+
+.step-3 .controls .pages button.active {
+    background-color: rgb(0, 165, 41);
+}
+
+.step-3 .controls .leftBtn,
+.step-3 .controls .rightBtn {
+    background-color: white;
+    border-radius: 50%;
+    border: none;
+    padding: 4px 10px;
+    color: #1d1ba3;
+    font-weight: 800;
+    font-size: 18px;
+}
+
+.step-4 {
+    text-align: center;
+    color: white;
+    display: none;
+}
+
+.step-4 h3 {
+    font-size: 22px;
+}
+
+.step-4 button {
+    background-color: white;
+    border: none;
+    font-size: 14px;
+    margin-top: 8px;
+    padding: 8px;
+}
+
+@media screen and (max-width: 768px) {
+    .quiz {
+        padding: 8px;
+    }
+
+    .step-3 {
+        width: 100%;
+    }
+
+    .step-3 .options {
+        gap: 8px;
+    }
+    .step-3 h3 {
+        font-size: 16px;
+    }
+    .step-3 .options button {
+        font-size: 12px;
+    }
+    .step-3 .controls .pages {
+        gap: 4px;
+    }
+    .step-3 .controls .leftBtn, .step-3 .controls .rightBtn {
+        height: 24px;
+        width: 24px;
+        font-size: 14px;
+        padding: 0;
+    }
+    .step-3 .controls .pages button {
+        height: 24px;
+        width: 24px;
+        font-size: 14px;
+    }
+}
