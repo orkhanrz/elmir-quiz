@@ -79,7 +79,6 @@ button {
 }
 
 .step-3 .options button {
-    flex: 0 0 calc(50% - 16px);
     color: white;
     background-color: transparent;
     border: 1px solid white;
@@ -103,6 +102,7 @@ button {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 16px;
 }
 
 .step-3 .controls .pages {
@@ -114,10 +114,12 @@ button {
 
 .step-3 .controls .pages button {
     border-radius: 50%;
-    height: 32px;
-    width: 32px;
+    display: grid;
+    place-items: center;
     border: none;
     background-color: #1d1ba3;
+    width: 32px;
+    aspect-ratio: 1;
     color: white;
 }
 
@@ -127,13 +129,17 @@ button {
 
 .step-3 .controls .leftBtn,
 .step-3 .controls .rightBtn {
+    display: grid;
+    place-items: center;
     background-color: white;
     border-radius: 50%;
     border: none;
-    padding: 4px 10px;
     color: #1d1ba3;
     font-weight: 800;
-    font-size: 18px;
+    font-size: 16px;
+    width: 32px;
+    aspect-ratio: 1;
+    flex-shrink: 0;
 }
 
 .step-4 {
@@ -156,6 +162,7 @@ button {
 
 @media screen and (max-width: 768px) {
     .quiz {
+        width: 100%;
         padding: 8px;
     }
 
@@ -172,18 +179,18 @@ button {
     .step-3 .options button {
         font-size: 12px;
     }
-    .step-3 .controls .pages {
+    .step-3 .controls {
         gap: 4px;
     }
+    .step-3 .controls .pages {
+        gap: 8px;
+    }
     .step-3 .controls .leftBtn, .step-3 .controls .rightBtn {
-        height: 24px;
-        width: 24px;
-        font-size: 14px;
-        padding: 0;
+        width: 26px;
+        font-size: 10px;
     }
     .step-3 .controls .pages button {
-        height: 24px;
-        width: 24px;
-        font-size: 14px;
+        width: 28px;
+        font-size: 10px;
     }
 }
