@@ -2783,4 +2783,706 @@ vəsaitini (net cash flow) hesablayın. Qeyd – şirkət gəlir vergisi vermir
 		D: "i və ii",
 		correct: "D",
 	},
+	// CFA Level I – İqtisadiyyat
+	{
+		question:
+			"Mehmanxanada gecəlik otaqlarının qiyməti 150 dollardan 200 dollara artdıqda, otaqlar üçün tələb gecəlik 100-dən 150 otağa qədər artır. Mehmanxanada qonaq otaqlarının təklif elastikliyi nə qədərdir?",
+		A: "0.72",
+		B: "1.40",
+		C: "1.50",
+		D: "1.60",
+		correct: "B",
+	},
+	{
+		question: "İqtisadi tənəzzül boşluğu (recessionary gap) aşağıdakı hallarda müşahidə olunur:",
+		A: "Real ÜDM (ümumi daxili məhsul) potensial ÜDM-dən yuxarıdır",
+		B: "Real ÜDM potensial ÜDM-dən aşağıdır.",
+		C: "Məşğulluq tam məşğulluq bərabərliyindən yuxarıdır",
+		D: "İnflyasiya səviyyəsi yuxarıdır",
+		correct: "B",
+	},
+	{
+		question:
+			"Tam elastik tələbdə məhsulun alıcı və satıcısı arasında vergi bölüşdürülməsi ilə əlaqədar aşağıdakı bəyanatlardan hansı ən düzgünüdür?",
+		A: "Satıcılar bütün vergini ödəyir",
+		B: "Alıcılar bütün vergi yükünü daşıyır",
+		C: "Alıcılar və satıcılar vergi yükünü bölüşürlər",
+		D: "Dövlət satıcılardan vergi tutmur",
+		correct: "A",
+	},
+	{
+		question:
+			"Təbii inhisarçının tənzimlənməsində tənzimləyici (regulator) tərəfindən ən məqbul qəbul olunan qiymətləndirmə qaydası hansıdır?",
+		A: "Ümumi qiymət qaydası (total cost pricing rule)",
+		B: "Orta qiymət qaydası (average cost pricing rule)",
+		C: "Marjinal qiymət qaydası",
+		D: "Aşağı qiymət qaydası",
+		correct: "B",
+	},
+	{
+		question:
+			"Aşağıdakı bəyanatlardan hansı məhkumların dilemması oyununda iki şirkətin Neş bərabərliyinin (Nash equilibrium) təsviridir?",
+		A: "Bir şirkət qaydalara riayət edir, digəri isə dələduzluq edir",
+		B: "Hər iki şirkət dələduzluq edir və hər iki şirkət sıfır iqtisadi mənfəət əldə edir",
+		C: "Hər iki şirkət qaydalara riayət edir və hər bir şirkət müsbət iqtisadi mənfəət əldə edir",
+		D: "Heç biri",
+		correct: "B",
+	},
+	{
+		question: "Təbii ehtiyatlar bazarının ən yaxşı təsnifatı aşağıdakılardan hansıdır?",
+		A: "Bərpa olunmayan təbii ehtiyatların təklifi tam elastik olmayandır və şirkətlər qiymətlərlə razılaşırlar",
+		B: "Qiymət bərpa oluna bilən ehtiyatlar üzrə bazar tələbi və bərpa olunmayan təbii ehtiyatlar bazarının təklifi ilə müəyyən olunur",
+		C: "Bərpa olunan təbii ehtiyatların təklifi tam elastikdir və qiymət növbəti dövrdə gözlənilən qiymtinin cari dəyərinə bərabərdir.",
+		D: "Heç biri",
+		correct: "B",
+	},
+	{
+		question: "Təklifə olan təsirlərə əsaslandıqda, gəlir vergisində artım aşağıdakı kimidir:",
+		A: "Əmək üçün tələb qrafikində dəyişiklik",
+		B: "Əməyin tam məşğulluqdan aşağı səviyyəyə düşməsi",
+		C: "Potensial ÜDM üzrə artım",
+		D: "İnflyasiya üzrə artım",
+		correct: "B",
+	},
+	{
+		question:
+			"İşsizliyin təbii dərəcəsindəki (natural rate of unemployment) dəyişiklik aşağıdakılardan hansında dəyişikliyə səbəb olur?",
+		A: "Yalnız qısamüddətli Filips qrafikində",
+		B: "Yalnız uzunmüddətli Fikips qrafikində",
+		C: "Həm qısamüddətli, həm də uzunmüddətli Filips qrafikində",
+		D: "Nə qısamüddətli, nə də uzunmüddətli Filips qrafikində",
+		correct: "C",
+	},
+	{
+		question: "Monetar siyasətin aşağıdakılardan hansı məqsədi əsas məqsəd kimi təsvir olunur?",
+		A: "Qiymət sabitliyi",
+		B: "Tam məşğulluq",
+		C: "Uzunmüddətli faiz dərəcəsinin aşağı salınması",
+		D: "Açıq bazar əməliyyatlarının aparılması",
+		correct: "A",
+	},
+	{
+		question: "Aşağıdakılardan hansı tam rəqabətdə olan şirkətin qiymətlə razılaşmasının səbəbi deyil?",
+		A: "Alıcılar digər şirkətlərin qiymətləri haqqında yaxşı məlumatlıdırlar",
+		B: "Şirkət məhsulunun qiymətini bazar qiymətində və ya ondan yuxarı səviyyədə təyin edir",
+		C: "Şirkət ümumi məhsulun çox kiçik hissəsini istehsal edir",
+		D: "Heç biri",
+		correct: "B",
+	},
+	{
+		question:
+			"Manqoların hər birnin qiyməti 10 Hindistan Rupisi (HR) ilə verildikdə, müştəri büdcəsini manqodan daha çox dəyər verdiyi meyvələr üçün xərcləyir. Ancaq hər bir manqonun qiyməti 4 HR olduqda, müştəri 20 manqo alır. Bu zaman ümumi müştəri profisiti (consumer surplus) nə qədərdir?",
+		A: "26",
+		B: "60",
+		C: "120",
+		D: "150",
+		correct: "B",
+	},
+	{
+		question:
+			"Əmək kəmiyyəti artdıqda, əməyin marjinal gəlir məhsulu (MRP) ilə bağlı aşağıdakılardan ən çox ehtimal ediləni hansıdır?",
+		A: "MRP inhisarçılıq üçün artırılır",
+		B: "MRP firmanın yüksək rəqabətliliyi üçün azaldılır",
+		C: "MRP inhisarçılıq və firmanın yüksək rəqabətliliyi üçün artırılır",
+		D: "Heç biri",
+		correct: "B",
+	},
+	{
+		question:
+			"Tamamlayıcı (complementary) məhsullar üçün tələbin qarşılıqlı elastikliyi (cross elasticity of demand) ən çox belə ola bilər;",
+		A: "sıfır",
+		B: "müsbət",
+		C: "mənfi",
+		D: "Heç biri",
+		correct: "C",
+	},
+	{
+		question:
+			"Şirkətdə sahibkarlıq qabiliyyətinə (entrepreneurial activity) qayıtma müsbət iqtisadi dəyərlər yaratdıqda, bu;",
+		A: "Normaldır",
+		B: "Normadan azdır",
+		C: "Normadan çoxdur",
+		D: "Heç biri",
+		correct: "C",
+	},
+	{
+		question: "Əmək haqqı dərəcələrinin dəyişməyən (sticky) olması ilə bağlı fikirlər ən azı əlaqələndirilir:",
+		A: "Klassik makroiqtisadiyyat ilə",
+		B: "Monetarist makroiqtisadiyyat ilə",
+		C: "Keynes makroiqtisadiyyatı ilə",
+		D: "Yeni Keynes makroiqtisadiyyatı ilə",
+		correct: "A",
+	},
+	{
+		question:
+			"Yüksək rəqabətli bazardakı (perfect competition) şirkət üçün məhsul artdıqca marjinal gəlir (marginal revenue):",
+		A: "artır",
+		B: "azalır",
+		C: "sabit qalır",
+		D: "Heç biri",
+		correct: "C",
+	},
+	{
+		question:
+			"Qiymət ayrı-seçkiliyi (price discrimination) inhisarçlıların ən çox hansı məqsədlə gördüyü tədbirdir?",
+		A: "Məhsulu yenidən satmaq üçün",
+		B: "Məhsulu aşağı qiymətlə satmaq üçün",
+		C: "İstehsalçı profisitini ələ keçirmək üçün",
+		D: "İstehlakçı profisitini ələ keçirmək üçün",
+		correct: "D",
+	},
+	{
+		question: "Aşağıdakılardan hansı xərc inflasiyasına (cost-push inflation) gətirib çıxarır?",
+		A: "Maliyyə xərclərinin azaldılması",
+		B: "Xammalın qiymətlərinin artırılması",
+		C: "İstehsal qiymətlərini aşağı salan texnologiyanı dəyişmək",
+		D: "Gəlir vergisinin azaldılması",
+		correct: "B",
+	},
+	{
+		question: "Aşağıdakılardan hasnı monetar siyasətin həyata keçirilməsində Mərkəzi bank üçün əlverişli deyil?",
+		A: "İnflasiyanın hədəflənməsi",
+		B: "Vergi tutulmasının uyğunlaşdırılması",
+		C: "Faiz dərəcəsinin idarəedilməsi",
+		D: "Açıq bazar əməliyyatlarından istifadə",
+		correct: "B",
+	},
+	{
+		question: "Federal Reserve-in (Fed) monetar siyasəti üçün mövcud olan alətlərə daxil deyil:",
+		A: "Açıq bazar əməliyyatları",
+		B: "Məcburi ehiyat normalarının (required reserve ratio) artırılma qabiliyyətinin müəyyən edilməsi",
+		C: "Repo və əks-Repo əməliyyatları",
+		D: "Fed notları üçün ehtiyat olaraq qızılın həcminin dəyişdirilməsi",
+		correct: "D",
+	},
+	{
+		question:
+			"İstehlakçı qiymət indeksi (CPİ) səbətinin tərkibində yalnız 2 əmtəə və xidmətin olduğu güman edilir: portağallar və saç kəsimi. Baza dövründə müştəri hər biri $2 olan 15 portağal və $10 olan 5 saç kəsimi xidmətini aldı. Cari dördə müştəri hər biri $1.75 olan 15 portağal və 12$ olan 5 saç kəsimi xidmətini alır. CPİ cari dövr üçün nə qədərdir?",
+		A: "107.81",
+		B: "114.58",
+		C: "117.97",
+		D: "119.74",
+		correct: "A",
+	},
+	{
+		question:
+			"Qısa müddətli perspektivdə istehsal və xərclər arasındakı əlaqə ilə bağlı marjinal xərclərin (marginal cost) azaldılması ən çox hansı səviyyəli istehsalda baş verir?",
+		A: "Aşağı istehsal",
+		B: "Yüksək istehsal",
+		C: "Maksimum genişləndirilmiş istehsal",
+		D: "rəqabətli bazardakı istehsal",
+		correct: "A",
+	},
+	{
+		question:
+			"Mallara və xidmətlərə olan artıq tələbatların yaratdığı inflyasiyanın (demand-pull inflation) ilkin təsiri necə olur?",
+		A: "Qiymət səviyyəsində artım və real ÜDM-də azalma.",
+		B: "Qiymət səviyyəsində artım və real ÜDM-də artım",
+		C: "Pul kəmiyyətində azalma ilə müşahidə edilən dövlət xərclərindəki artım",
+		D: "Real ÜDM-də azalma və dövlət xərclərində artım",
+		correct: "B",
+	},
+	{
+		question:
+			"Qısamüddətli Filips əyrisinə uyğun olaraq inflyasiya gözlənildiyindən az olduqda, ilkin təsir necə olar?",
+		A: "Real əmək haqqı səviyyəsi düşər.",
+		B: "Real faiz dərəcəsi düşər",
+		C: "İşsizlik öz təbii səviyyəsindən aşağı olacaq",
+		D: "İşsizlik öz təbii səviyyəsindən yuxarı olacaq",
+		correct: "D",
+	},
+	{
+		question:
+			"Alıcının fərqli tələb elastikliyi səbəbindən inhisarçı yüksək qiymət diskriminasiyasını qəbul etdikdə, aşağıdakılardan hansı ən az ehtimal olunan nəticədir?",
+		A: "İnhisarçı bütün izafi faydanı (surplus) istehlakçılarla bölüşür",
+		B: "İnhisarçı bütün izafi faydanı (surplus) özünə götürür.",
+		C: "Marjinal vahid qiyməti digər vahidlər üçün olan qiymətdən az olur.",
+		D: "Qiymətin marjinal xərcə bərabər olduğu nöqtədə istehsal artır.",
+		correct: "A",
+	},
+	{
+		question:
+			"Aşağıdakılardan hansının şirkətlərdə direktor-vasitəçi problemini (principle-agent problem) həll etmək və ya azaltmağı ehtimal olunmur?",
+		A: "Mülkiyyət payı",
+		B: "Uzun müddətli müqavilələr",
+		C: "Peşəkar idarəetmə",
+		D: "Heç biri",
+		correct: "C",
+	},
+	{
+		question:
+			"Sıxışdırılma təsirinə (crowding-out effect) əsasən yüksək xərclərin maliyyəsləşdirilməsi üçün dövlət borcu ən çox nəyi artıra bilər?",
+		A: "Özəl investisiyanı",
+		B: "Real faiz dərəcəsini",
+		C: "Borc kapitalı təklifini",
+		D: "Heç birini",
+		correct: "B",
+	},
+	{
+		question:
+			"Qısa müddətdə əmək haqqının dəyişməyən (sticky) olması hansı ideologiya məktəbinin davamçılarına aid olması az ehtimal olunur?",
+		A: "Klassik",
+		B: "Keynesian",
+		C: "Yeni Keynesian",
+		D: "Monetarist",
+		correct: "A",
+	},
+	{
+		question:
+			"Neş bərabərliyinin (Nash equilibrium) “Məhbusların dilemması” ilə üzləşən duopoliya üçün nə ilə nəticələnəcəyi ehtimal edilir?",
+		A: "Hər iki şirkət iqtisadi gəlir qazanırlar şirkətlər",
+		B: "Heç bir şirkət iqtisadi gəlir qazanmır",
+		C: "Şirkətlərdən biri iqtisadi gəlir qazanır, digəri isə qazanmır",
+		D: "Heç biri",
+		correct: "B",
+	},
+	{
+		question: "Məhdud məsuliyyət hansı növ biznes təşkilatçılığı üçün üstünlük ola bilər?",
+		A: "Şəriklik",
+		B: "Korporasiya",
+		C: "Fərdi mülkiyyət",
+		D: "Heç biri",
+		correct: "B",
+	},
+	{
+		question: `
+		Alma və köynək olmaqla iki məhsuldan ibarət iqtisadiyyatda baza dövrü və cari dövr üzrə qiymət və kəmiyyətlər aşağıdakı qaydadadır:
+
+		Baza dövrü ----------- Kəmiyyət ----------- Qiymət 
+		Alma ----------- 25 ----------- 1.00
+		Köynək ----------- 5 ----------- 20.00
+		Cari dövr ----------- Kəmiyyət ----------- Qiymət
+		Alma -----------  25 ----------- 1.25
+		Köynək ----------- 5 ----------- 20.50
+
+		Baza dövrü üçün İstehlakçı qiymət İndeksi (CPİ) 100 olduqda, cari dövr üçün CPİ nə qədərdir?
+		`,
+		A: "103.57",
+		B: "105.33",
+		C: "107.00",
+		D: "113.75",
+		correct: "C",
+	},
+	{
+		question:
+			"Tam rəqabətdə olan şirkət üçün işçilərin sayı artdıqca, marjinal gəlir məhsulu (marginal revenue product) nəyin azalması səbəbilə azalır?",
+		A: "Yalnız marjinal məhsulun",
+		B: "Yalnız marjinal gəlirin",
+		C: "Həm marjinal məhsul, həm də marjinal gəlirin.",
+		D: "Kapitalın",
+		correct: "A",
+	},
+	{
+		question:
+			"Əgər hər hansı məhsulun qiymətinin aşağı düşməsi ümumi gəlirin artmasına səbəb olursa, bu tələb ən yaxşı aşağıdakı şəkildə təsvir edilir:",
+		A: "Elastik",
+		B: "İnelastik (elastik olmayan)",
+		C: "Tam inelastik (perfect inelastic)",
+		D: "Vahid elastik (unit elastic)",
+		correct: "A",
+	},
+	{
+		question:
+			"İşsizliyin aşağıda verilmiş növlərindən hansı işçilərin bir çoxunun texnologiyaların dəyişməsi səbəbilə yararsız hesab olunduğu iqtisadiyyat ilə əlaqələndirmək olar?",
+		A: "Dövri (cyclical)",
+		B: "Friksion (frictional)",
+		C: "Struktur (structural)",
+		D: "Könüllü işsizlik",
+		correct: "C",
+	},
+	{
+		question: "Məhsuldarlığa bir maneə olan “Free-rider” problemi aşağıdakılardan biri ilə əlaqəlidir:",
+		A: "İnhisarçılıq.",
+		B: "Oliqopoliya",
+		C: "Büdcə hesabına təmin olunan rifah",
+		D: "Subsidiya və kvotalar.",
+		correct: "C",
+	},
+	{
+		question: "Ekspansionist fiskal siyasət (expansionary fiscal policy) aşağıdakılardan hansında artım yaratmır?",
+		A: "Vergi dərəcəsi",
+		B: "Dövlət borcları",
+		C: "Dövlət xərcləri",
+		D: "Heç biri",
+		correct: "A",
+	},
+	{
+		question:
+			"Tam elastik təklifə (perfect elastic supply) malik bazarlar üçün verginin tətbiqi böyük ehtimalla aşağıdakılara səbəb olur:",
+		A: "Qiymət artır və satıcı bütün vergiləri ödəyir",
+		B: "Qiymət artır və alıcı bütün vergiləri ödəyir",
+		C: "Qiymətlərdə hər hansı dəyişiklik olmur və satıcı bütün vergiləri ödəyir",
+		D: "QIYMƏT artır, dövlət subsidiya verir",
+		correct: "B",
+	},
+	{
+		question:
+			"Şirkət müəyyən edir ki, məhsulun qiyməti 10% aşağı düşdükdə tələb olunan miqdar 5% artır. Məhsulun qiymət elastikliyi ən yaxşı necə təsvir edilə bilər?",
+		A: "Elastik",
+		B: "İnelastik (elastik olmayan)",
+		C: "Tam elastik",
+		D: "Tam inelastik",
+		correct: "B",
+	},
+	{
+		question:
+			"Tam rəqabətli (perfectly competitive) sənayedə tələbdə daimi azalmanın uzun müddətli yekun təsiri hansıdır?",
+		A: "Qiymət azalması",
+		B: "İqtisadi gəlirin azalması",
+		C: "Şirkətlərin sayının artması",
+		D: "Şirkətlərin sayının azalması",
+		correct: "C",
+	},
+	{
+		question:
+			"Əgər qiymət tənzimləyici agentlik qiymətləri monopoliyanın uzun müddətli orta xərclərinə (Long-run average cost) bərabər qiymətə təyin edərsə, monopoliyanın iqtisadi gəliri necə ola bilər?",
+		A: "Sıfır",
+		B: "Pozitiv",
+		C: "Neqativ",
+		D: "Dəyişməz",
+		correct: "A",
+	},
+	{
+		question:
+			"Mənzil kirayə nəzarətçiləri mənzil kirayə qiymətlərini tarazlıq qiymətlərindən (equilibrium price) aşağı tutarsa, aşağıdakılardan hansı baş verə bilər?",
+		A: "Yeni mənzil tikintisi genişlənər",
+		B: "Uzunmüddətli kirayəçilər mənzil sahiblərindən əhəmiyyətli dərəcədə mənfəət əldə edər",
+		C: "Yeni gələnlərə nəzarət olunan mənzillərdə imtiyazlı giriş hüququ verilir",
+		D: "Otellərdə qiymətlər artar",
+		correct: "B",
+	},
+	{
+		question:
+			"Pul miqdarı nəzəriyyəsinə (quantity theory of money) əsasən uzunmüddətli perspektivdə pulun miqdarındakı artım qiymət səviyyəsində nə dərəcədə faiz artımına gətirib çıxarır?",
+		A: "Bərabər",
+		B: "Aşağı",
+		C: "Yüksək",
+		D: "Heç biri",
+		correct: "A",
+	},
+	{
+		question:
+			"Müəyyən müddət ərzində əmtəənin qiyməti 5.0% düşür və tələb olunan kəmiyyət 7.5% artır. Əmtəə üçün tələbin qiymət elastikliyi aşağıdakılardan hansıdır?",
+		A: "Elastik",
+		B: "Elastik olmayan (inelastic)",
+		C: "Tam elastik",
+		D: "Heç biri",
+		correct: "A",
+	},
+	{
+		question:
+			"Şirkətin istehsal funksiyası ilə əlaqədar olaraq, əmək və kapital xərcləri aşağıda ən yaxşı formada təsvir olunub:",
+		A: "Uzun müddətdə dəyişilməz",
+		B: "Uzun müddətdə dəyişkən",
+		C: "Qısa müddətdə dəyişkən",
+		D: "Qısa müddətdə dəyişilməz",
+		correct: "B",
+	},
+	{
+		question: "Hesab edin ki, duopoliyadakı iki şirkət kartel formalaşdırmaq, istehsalı məhdudlaşdırmaq, qiymətləri qaldırmaq və gəliri artırmaq üçün gizli müqavilə (collusive agreement) imzalayır. Nəş tarazlığına əsasən (Nash equilibrium) ən çox güman edilən nəticələr aşağıdakı kimidir:",
+		A: "Hər iki şirkət dələduzluq edir",
+		B: "Hər iki şirkət qaydalara riayət edir",
+		C: "Bir firma dələduzluq edir və digər şirkət qaydalara riayət edir",
+		D: "Heç biri",
+		correct: "A"
+	  },
+	  {
+		question: "Monetar siyasəti həyata keçirtmək üçün ABŞ Federal Ehtiyat Sisteminin (Fed) istifadə etdiyi alətlərə daxildir:",
+		A: "Pul köçürmələri",
+		B: "Açıq bazar əməliyyatları",
+		C: "Gəlir vergisini artırmaq və ya aşağı salmaq",
+		D: "Sosyal proqramları üçün dövlət xərclərini artırmaq",
+		correct: "B"
+	  },
+	  {
+		question: "Fərz edin ki, inflyasiya dövlət xərclərinin artırılması və vergilərin azaldılması ucbatından artır. Belə inflyasiya aşağıda ən yaxşı formada təsvir olunub:",
+		A: "Xərclərin inflyasiyası (cost-push)",
+		B: "Tələbat inflyasiyası (demand-pull)",
+		C: "Monetarist nəzəriyyəsi",
+		D: "Teylor qaydası (Taylor rule)",
+		correct: "B"
+	  },
+	  {
+		question: "Məhsulların qiyməti 15 dollardan 13 dollara düşüb. Qiymətdəki azalmaya əsasən, məhsulun tələb olunan kəmiyyəti 100 ölçü vahidindən 120 ölçü vahidinə qalxır. Məhsul üçün tələbatın qiymət elastikliyi nə qədərdir?",
+		A: "1.3",
+		B: "1.5",
+		C: "1.8",
+		D: "10.0",
+		correct: "A"
+	  },
+	  {
+		question: "Ümumi gəliri sadəcə iqtisadi rentadan ibarət olan müəyyən istehsalat faktoru (factor of production) üçün təklif əyrisi (supply curve) necə olur?",
+		A: "Şaquli (vertical)",
+		B: "Üfüqi (horizontal)",
+		C: "Qabarıq (convex)",
+		D: "Tam elastik",
+		correct: "A"
+	  },
+	  {
+		question: "Rəqabətli bazarlarda (in competitive markets) məhsuldar kəmiyyət istehsal olunduqda, ən az ehtimal olunan nəticə aşağıdakı kimidir:",
+		A: "Ümumi artıqlığı (surplus) maksimum dərəcədə artırmaq",
+		B: "Yarımçıq istehsal etmək",
+		C: "İtkiləri minimum dərəcəyə azaltmaq",
+		D: "Heç biri",
+		correct: "B"
+	  },
+	  {
+		question: "Əmək haqqı tarazlığından yuxarı olan minimum əmək haqqı ən yaxşı formada aşağıdakı kimi təsnif olunur:",
+		A: "Minimum qiymət (price floor)",
+		B: "Maksimum qiymət (price ceiling)",
+		C: "İşsizliyi azaltmaq vasitəsi",
+		D: "İqtisadi renta",
+		correct: "A"
+	  },
+	  {
+		question: "Sıxışdırıb çıxartma təsiri (crowding-out effect) əlaqədardır:",
+		A: "Real faiz dərəcəsinin düşməsi",
+		B: "Dövlət büdcəsi kəsri",
+		C: "Dövlət büdcəsi artıqlığı",
+		D: "Pul kütləsinin artması",
+		correct: "B"
+	  },
+	  {
+		question: "Uğurlu məhsul inkişafı, reklam və brendlərin yaradılmasının hansı istehsalçının iqtisadi gəliri üzrə müsbət təsiri var?",
+		A: "inhisarçı",
+		B: "Tam rəqabətli",
+		C: "İnhisarçı rəqabətli (monopolistic competition)",
+		D: "Heç biri",
+		correct: "C"
+	  },
+	  {
+		question: "Almanın qiyməti 3% düşdükdə, tələb olunan armudun miqdarı 4% düşürsə, o zaman almalar və armudlar ən yaxşı aşağıdakı kimi təsvir olunur:",
+		A: "Əvəzedici",
+		B: "Tamamlayıcı",
+		C: "Aşağı keyfiyyətli mallar",
+		D: "Yuxarı keyfiyyətli mallar",
+		correct: "A"
+	  },
+	  {
+		question: "Cari istehsal və istehlak səviyyəsində məhsula tələbin qiymət elastikliyi 1.20, təklif elastikliyi 1.45-ə bərabərdir. Belə məhsulun satıcısı üzərinə düşən vergilərin həqiqi iqtisadi nəticəsi əsasən ödənilir:",
+		A: "Satıcı tərəfindən",
+		B: "Alıcı tərəfindən",
+		C: "Qismən alıcı və qismən də satıcı tərəfindən",
+		D: "Dövlət tərəfindən",
+		correct: "C"
+	  },
+	  {
+		question: "Fərz et ki, inhisarçı qiymətləri təmiz rəqabətdə mövcud olan qiymətlərdən yuxarı səviyyəyə qaldırır. Əgər inhisarçı qiymətləri daha da qaldırmağa qərar versə, cəmiyyətə olan itki əsasən:",
+		A: "Artacaq",
+		B: "Azalacaq",
+		C: "Eyni qalacaq",
+		D: "Heç biri",
+		correct: "A"
+	  },
+	  {
+		question: "Fərz et ki, ABŞ Mərkəzi Bankı (the Fed) faiz dərəcəsini azaltmağa qərar verir. Bu siyasəti tətbiq etmək üçün Fed əsasən:",
+		A: "İstiqrazlar satacaq",
+		B: "İstiqrazlar alacaq",
+		C: "Tələb olunan ehtiyat nisbətini artıracaq",
+		D: "Heç biri",
+		correct: "B"
+	  },
+	  {
+		question: "Hökumət böhrana məruz qalan iqtisadiyyatı stimullaşdırmaq və qısa vaxt ərzində işsizliyi azaltmaq üçün hansı növ işsizlik növünü azaltmağa meyillidir:",
+		A: "Tsiklik (Cyclical)",
+		B: "Friksion (Frictional)",
+		C: "Strukturlu (Structural)",
+		D: "İşsizlik azala bilməz",
+		correct: "A"
+	  },
+	  {
+		question: "Bazar strukturu və Herfindahl-Hirschman İndeksi (HHİ) ilə bağlı olan aşağıdakı bəyanatlardan hansı ən düzgünüdür?",
+		A: "HHİ bazara giriş üçün potensial maneəyənin ən faydalı tədbiridir.",
+		B: "Qiymətlərə aşağı nəzarət oliqopoliyaya xarakteriktir.",
+		C: "60 HHİ dəyəri göstərir ki, bazar yüksək səviyyədə rəqabətlidir.",
+		D: "60 HHİ dəyəri göstərir ki, bazar aşağı səviyyədə rəqabətlidir.",
+		correct: "C"
+	  },
+	  {
+		question: "Bir çox mərkəzi bankların əsas pul siyasəti ən yaxşı xarakterizə olunur:",
+		A: "İnflyasiyanı tənzimləyən",
+		B: "İqtisadi artımı stimullaşdıran",
+		C: "Aşağı faiz dərəcəsini qoruyub saxlayan",
+		D: "Dövlət borcunu azaldan",
+		correct: "A"
+	  },
+	  {
+		question: "Eksternaliya (Externalities) əsas təsir edir:",
+		A: "Satıcılara",
+		B: "Alıcılara",
+		C: "Alıcılar və satıcılardan başqa kiməsə",
+		D: "İnhisarçılara",
+		correct: "C"
+	  },
+	  {
+		question: "İstehlakçı qiymət indeksi (CPİ) bu il 252-dir. CPİ keçən il 246 idi. Bu halda, inflyasiya dərəcəsi nə qədərdir?",
+		A: "2.38%",
+		B: "2.44%",
+		C: "6.00%",
+		D: "8.00%",
+		correct: "B"
+	  },
+	  {
+		question: "Torpaq ən yaxşı xarakterizə olunur:",
+		A: "Mükəmməl elastik olmayan (perfectly inelastic) təklifə sahib olmaqla",
+		B: "Yenilənməyən təbii ehtiyat olmaqla",
+		C: "Otel prinsiplərinə uyğun qiymətləndirilməklə",
+		D: "Mükəmməl elastik təklifə sahib olmaqla",
+		correct: "A"
+	  },
+	  {
+		question: "Aşağıdakılardan hansı pulun ən uyğun olmayan funksiyası/xüsusiyyətidir?",
+		A: "Pul hesab vahididir",
+		B: "Pul ödəniş vasitəsidir",
+		C: "Pul dəyər göstəricisidir",
+		D: "İstəklərin ikiqat təsadüfünü tələb edir",
+		correct: "D"
+	  },
+	  {
+		question: "Aşağıda hansı halda mala olan tələbat daha elastikdir?",
+		A: "Mallar zəruri olduqda",
+		B: "Gəlirin daha az hissəsi mallara sərf edildikdə",
+		C: "Qiymət dəyişikliyinə düzəliş daha çox vaxt apardıqda",
+		D: "Heç biri",
+		correct: "C"
+	  },
+	  {
+		question: "Birinci dərəcəli qiymət diskriminasiyası istehsalçılara iqtisadi mənfəətlərini artırmağa imkan verdiyi halda istehlakçı artıqlığı (consumer surplus):",
+		A: "Artır",
+		B: "Azalır",
+		C: "Aradan qaldırılır",
+		D: "Heç biri",
+		correct: "C"
+	  },
+	  {
+		question: "Mərkəzi bank tərəfindən aşağıdakı tədbirlərin hansı pulun kəmiyyətinin artırılmasına ən uyğundur?",
+		A: "Məcburi ehtiyyat normalarını artırmaq",
+		B: "Banklar üçün faiz dərəcəsini artırmaq",
+		C: "Açıq bazarda qiymətli kağızları satmaq",
+		D: "Açıq bazarda qiymətli kağızları almaq",
+		correct: "C"
+	  },
+	  {
+		question: "Əgər hökumət vergidə eyni artım ilə maliyyələşdirilən məbləğlə ölkə daxili istehsal edilmiş mallara pul xərcləməsini artırarsa, məcmu tələb:",
+		A: "Artacaq",
+		B: "Azalacaq",
+		C: "Dəyişilməz qalacaq",
+		D: "Heç biri",
+		correct: "A"
+	  },
+	  {
+		question: "Şirkətin uzun müddətdə biznesdə qalması üçün aşağıdakı mənfəət ölçülərindən ən çoxu hansı lazımdır?",
+		A: "Normal mənfəət",
+		B: "İqtisadi mənfəət",
+		C: "Mühasibat mənfəəti",
+		D: "Heç biri",
+		correct: "A"
+	  },
+	  {
+		question: "Kiçik ölkə karandaşların istehsalında müqayisəli üstünlüyə malikdir. Hökümət iqtisadi artıma yardım etmək üçün karandaşlar üçün ixracat subsidiyası ayırır. Aşağıdakılardan hansı bu subsidiyanın nəticəsi ola bilər?",
+		A: "Yeni yerli istehsalçılar karandaş bazarına daxil olan kimi təklif artacaq və ölkə daxili qiymət aşağı düşəcək.",
+		B: "Yerli istehsalçı artıqlığının (surplus) artması subsidiyanın məbləğindən və yerli istehlakçı artıqlığındakı azalmadan çox olacaq",
+		C: "Yerli istehsalçıların xalis fayda əldə etmələrinə baxmayaraq, bu siyasət milli rifah üçün geri qaytarılmayan itkilərə səbəb olacaq çatışmazlıqlara təkan verəcək.",
+		D: "Heç biri",
+		correct: "C"
+	  },
+	  {
+		question: "Ticarət partnerinin qoşulmamasını nəzərə aldıqda, böyük ölkə üçün tarif qoymaqla milli rifahı qaldırmaq məqsədilə aşağıdakı şərtlərdən hansı qüvvədə qalmalıdır?",
+		A: "O, idxal edilmiş malların istehsalında müqayisəli üstünlüyə malik olmalıdır.",
+		B: "Geri qaytarılmayan itkilər ticarəti yaxşılaşdırma şərtlərindən yaranan faydalarından az olmalıdır.",
+		C: "İstehlakçının artıqlığındakı azalmanı kompensasiya etmək üçün ixracat üzrə lisenziyanı auksiona çıxartmalıdır.",
+		D: "Heç biri",
+		correct: "B"
+	  },
+	  {
+		question: "Cari balans çatışmazlığı olan ölkə aşağıdakılardan hansını icra etməklə istehsal etdiyindən daha çox istehlak etməyə qadir olacaq?",
+		A: "Xalis xarici öhdəliklərini artırmaqla",
+		B: "Xarici investisiyalara məhdudiyyət qoymaqla",
+		C: "Yerli əmanətləri təşviq etmək üçün faiz dərəcəsini dəyişməklə",
+		D: "Heç biri",
+		correct: "A"
+	  },
+	  {
+		question: "Valyuta rejimlərinin təsnifləşdirilməsində valyuta şurası sistemi (VŞS) hansı halda hərəkətsiz bərabərlik (fixed-rate parity) sistemindən fərqlənir?",
+		A: "VŞS xarici valyuta ehtiyyatlarının öz mülahizəsinə uyğun hədəf səviyyəsinə malikdir.",
+		B: "VŞS valyuta zənbilini təyin edə bilər, lakin hərəkətsiz bərabərlik sistemi təyin edə bilməz.",
+		C: "VSŞ daxilində maliyyə orqanı kritik anda ənənəvi son kreditor kimi çıxış etmir.",
+		D: "Heç biri",
+		correct: "C"
+	  },
+	  {
+		question: "İstehlak profisiti (consumer surplus) ən yaxşı təsvir edilir:",
+		A: "Həmişə sıfırdan kiçik və ya ona bərabər",
+		B: "Həmişə sıfırdan böyük və ya ona bərabər",
+		C: "Bəzən müsbət bəzən də mənfi",
+		D: "Həmişə mənfi",
+		correct: "B"
+	  },
+	  {
+		question: "Əgər vahid istehsalçının minimum səmərəli miqyası (minimum efficient scale) fərqləndirilməmiş mala olan tələbə nisbətən azdırsa, istehsalçının bazar strukturu ən yaxşı təsviredilmişdir:",
+		A: "Oliqopoliya",
+		B: "Tam rəqabət (perfect competition)",
+		C: "İnhisarçı rəqabət",
+		D: "Duopoliya",
+		correct: "B"
+	  },
+	  {
+		question: "Əmək qabiliyyəti olan əhalinin sayını sabit saxlayaraq, işləyən əhalinin sayı dəyişməz qalarkən işçi qüvvəsinin sayı nisbətində azalma olarsa, işsizliyin səviyyəsi olacaqdır:",
+		A: "Artır",
+		B: "Azalır", 
+		C: "Dəyişilməz qalır",
+		D: "Heç biri",
+		correct: "B"
+	  },
+	  {
+		question: "Aşağıdakılardan hansı düzgündür? Ölkənin ticarətdən gəlir əldə etmək üçün nəyi olmalıdır?",
+		A: "Mütləq üstünlük (absolute advantage)",
+		B: "Müqaysəli üstünlük (comperative advantage)", 
+		C: "Həcmə qənaət yaxud (economies of scale)",
+		D: "Aşağı işçi xərcləri (lower labor costs)",
+		correct: "B"
+	  },
+	  {
+		question: "İqtisadiyyata təsir etmək məqsədilə Mərkəzi bank dövlət istiqrazlarını satmaqla açıq bazar əməliyyatlarını həyata keçirir. Bunu etməklə Mərkəzi bank nəyə nail olmağa çalışır?",
+		A: "Bank ehtiyatlarını azaltmaqla iqtisadiyyatı daraltmağa",
+		B: "Aşağı faiz dərəcəsi siyasəti ilə iqtisadiyyatı artırmağa",
+		C: "Aşağı faiz dərəcəsi siyasəti ilə iqtisadiyyatı daraltmağa",
+		D: "Dövlət xərclərini azaltmağa",
+		correct: "A"
+	  },
+	  {
+		question: "İki ölkə A və B nəzərdə tutun. A ölkəsi nisbi əmək üstünlüyü ilə qapalı ölkədir və tekstil istehsalında müqayisəli üstünlüyə malikdir. B ölkəsi kapitalın nisbi bolluğu ilə fərqlənir. İki ölkə arasında tekstil ticarəti açıldıqda, A ölkəsinin aşağıdakılardan hansı üzrə əlverişli təsir yaşıyacağı ehtimal olunur?",
+		A: "Əmək",
+		B: "Kapital",
+		C: "Kapital və əmək",
+		D: "Heç biri",
+		correct: "A"
+	  },
+	  {
+		question: "Dörd ölkə gömrük birliyi daxilində fəaliyyət göstərir. Ölkələrdən biri ümumi bazar (common market) strukturu formalaşdırmağı təklif edir. Əgər bu dəyişiklik baş verərsə ölkələr arasında əlavə nə cür iqtisadi inteqrasiya səviyyəsi baş verəcəkdir?",
+		A: "Üzv olmayanlara qarşı ümumi ticari maneələr yaradacaq",
+		B: "İstehsal amillərinin sərbəst hərəkətinə icazə verməyə başlayacaq",
+		C: "Ümumi iqtisadi müəssisələr yaradacaq və iqtisadi siyasəti əlaqələndircək",
+		D: "Heç biri",
+		correct: "B"
+	  },
+	  {
+		question: "ABŞ dolları/Avro üçün spot məzənnə 0.7500-dir. Avro/Avstraliya dollarının (AUD) forvard məzənnəsi 1.4300-dür və bu spot məzənnə üzrə 400 bal forvard premiası təşkil edir (dörd onluq sistemi ilə ölçülür). ABŞ dolları/ Avstraliya dolları üçün məzənnə nə qədərdir?",
+		A: "1.0296",
+		B: "1.0425",
+		C: "1.1154",
+		D: "1.1357",
+		correct: "B"
+	  }
 ];
+
+
+
+
+
+
+
+
+
+
+

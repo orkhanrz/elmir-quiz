@@ -58,7 +58,19 @@ function showQuestion(questionIndex) {
 	D.textContent = currentQuestion.D;
 }
 
-function createQuizPages(questions) {
+function checkQuestionStatus() {
+	let questionPage = quizPages.children[questionIndex];
+
+	if (answers[questionIndex] && questions[questionIndex].correct === answers[questionIndex]) {
+		questionPage.classList.add("correct");
+	} else if (answers[questionIndex] && questions[questionIndex].correct !== answers[questionIndex]) {
+		questionPage.classList.add("wrong");
+	} else {
+		questionPage.classList.add("skipped");
+	}
+}
+
+function createQuizPages() {
 	for (let i = 1; i <= numOfQuestions; i++) {
 		const page = document.createElement("button");
 		page.innerText = i;
@@ -66,6 +78,11 @@ function createQuizPages(questions) {
 		quizPages.appendChild(page);
 
 		page.addEventListener("click", function () {
+			if (page.className.includes('skipped')){
+				page.classList.remove('skipped');
+			}
+
+			checkQuestionStatus();
 			questionIndex = i - 1;
 			showQuestion(questionIndex);
 		});
@@ -93,7 +110,7 @@ function startGame() {
 	quizPages.innerHTML = "";
 
 	shuffleQuestions(questions);
-	createQuizPages(questions);
+	createQuizPages();
 	showQuestion(questionIndex);
 
 	step2.style.display = "none";
@@ -109,17 +126,8 @@ start.addEventListener("click", () => {
 });
 
 next.addEventListener("click", () => {
-	let questionPage = quizPages.children[questionIndex];
-
 	if (questionIndex < questions.length - 1) {
-		if (answers[questionIndex] && questions[questionIndex].correct === answers[questionIndex]) {
-			questionPage.classList.add("correct");
-		} else if (answers[questionIndex] && questions[questionIndex].correct !== answers[questionIndex]) {
-			questionPage.classList.add("wrong");
-		} else {
-			questionPage.classList.add("skipped");
-		}
-
+		checkQuestionStatus();
 		questionIndex++;
 		showQuestion(questionIndex);
 	} else {
@@ -128,17 +136,8 @@ next.addEventListener("click", () => {
 });
 
 previous.addEventListener("click", () => {
-	let questionPage = quizPages.children[questionIndex];
-
 	if (questionIndex > 0) {
-		if (answers[questionIndex] && questions[questionIndex].correct === answers[questionIndex]) {
-			questionPage.classList.add("correct");
-		} else if (answers[questionIndex] && questions[questionIndex].correct !== answers[questionIndex]) {
-			questionPage.classList.add("wrong");
-		} else {
-			questionPage.classList.add("skipped");
-		}
-
+		checkQuestionStatus();
 		questionIndex--;
 		showQuestion(questionIndex);
 	}
