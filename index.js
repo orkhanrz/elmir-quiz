@@ -156,6 +156,7 @@ optionsBtns.forEach((option) => {
 		}
 
 		answers[questionIndex] = this.id;
+		checkQuestionStatus();
 		optionsBtns.forEach((option) => (option.disabled = true));
 	});
 });
