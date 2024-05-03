@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Task 12</title>
+		<style>
+			* {
+				box-sizing: border-box;
+			}
+
+			body {
+				font-family: 'Poppins', sans-serif;
+			}
+
+			button {
+				cursor: pointer;
+			}
+
+			.correct {
+				background-color: rgb(0, 165, 41) !important;
+			}
+
+			.wrong {
+				background-color: rgb(245, 58, 58) !important;
+			}
+
+			.skipped {
+				background-color: #141269 !important;
+			}
+
+			.input-wrapper {
+				display: flex;
+				gap: 8px;
+			}
+
+			.input-wrapper input {
+				width: 100%;
+				padding: 4px;
+				outline: none;
+				border: 1px solid #1d1ba3;
+			}
+
+			.input-wrapper button {
+				background-color: #1d1ba3;
+				border: none;
+				color: white;
+			}
+
+			.quiz {
+				width: 90%;
+				margin: 64px auto;
+				background-color: #2260cb;
+				border-radius: 8px;
+				display: flex;
+				justify-content: center;
+				padding: 16px 32px;
+			}
+
+			.step-2 {
+				background-color: white;
+				padding: 8px 16px;
+				border: none;
+			}
+
+			.step-3 {
+				width: 90%;
+				margin: 0 auto;
+				display: none;
+			}
+
+			.step-3 h3 {
+				color: white;
+				background-color: #1d1ba3;
+				padding: 8px 16px;
+				border-radius: 8px;
+				text-align: center;
+				font-size: 20px;
+			}
+
+			.step-3 .options {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 32px;
+				margin-bottom: 32px;
+			}
+
+			.step-3 .options button {
+				flex: 0 0 calc(50% - 16px);
+				color: white;
+				background-color: transparent;
+				border: 1px solid white;
+				padding: 8px 0;
+				font-size: 18px;
+			}
+
+			.step-3 .options button:disabled {
+				cursor: not-allowed;
+			}
+
+			.step-3 .options button.selected {
+				background-color: rgb(0, 165, 41);
+			}
+
+			.step-3 .options button.wrong {
+				background-color: rgb(245, 58, 58);
+			}
+
+			.step-3 .controls {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+			}
+
+			.step-3 .controls .pages {
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: center;
+				gap: 8px;
+			}
+
+			.step-3 .controls .pages button {
+				border-radius: 50%;
+				height: 32px;
+				width: 32px;
+				border: none;
+				background-color: #1d1ba3;
+				color: white;
+			}
+
+			.step-3 .controls .pages button.active {
+				background-color: rgb(0, 165, 41);
+			}
+
+			.step-3 .controls .leftBtn,
+			.step-3 .controls .rightBtn {
+				background-color: white;
+				border-radius: 50%;
+				border: none;
+				padding: 4px 10px;
+				color: #1d1ba3;
+				font-weight: 800;
+				font-size: 18px;
+			}
+
+			.step-4 {
+				text-align: center;
+				color: white;
+				display: none;
+			}
+
+			.step-4 h3 {
+				font-size: 22px;
+			}
+
+			.step-4 button {
+				background-color: white;
+				border: none;
+				font-size: 14px;
+				margin-top: 8px;
+				padding: 8px;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Task 12</h1>
+		<div class="task-12">
+			<div class="container">
+				<div class="quiz">
+					<div class="step-2">
+						<h3>Quiz neçə sualdan ibarət olsun?</h3>
+						<div class="input-wrapper">
+							<input id="numInput" type="number" max="500" min="1" required />
+							<button id="start">Başla</button>
+						</div>
+					</div>
+					<div class="step-3">
+						<h3 class="question"></h3>
+						<div class="options">
+							<button id="A"></button>
+							<button id="B"></button>
+							<button id="C"></button>
+							<button id="D"></button>
+						</div>
+						<div class="controls">
+							<button class="leftBtn"><</button>
+							<div class="pages"></div>
+							<button class="rightBtn">></button>
+						</div>
+					</div>
+					<div class="step-4">
+						<h3>Nəticə</h3>
+						<p>
+							Düz cavabların sayı:
+							<span id="correctCount">1</span>
+						</p>
+						<p>Səhv cavabların sayı: <span id="wrongCount">1</span></p>
+						<p>
+							Cavablandırılmayan sual sayı:
+							<span id="notAnsweredCount">1</span>
+						</p>
+						<p>Ümumi sual sayı: <span id="totalCount">1</span></p>
+						<button id="restart">Təkrarla</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script>
+			const quiz = require("./questions.js");
+
+			const step2 = document.querySelector(".step-2");
+			const step3 = document.querySelector(".step-3");
+			const step4 = document.querySelector(".step-4");
+			const quizPages = document.querySelector(".controls .pages");
+			const question = document.querySelector(".question");
+			const options = document.querySelector(".options");
+			const optionsBtns = document.querySelectorAll(".options button");
+			const previous = document.querySelector(".leftBtn");
+			const next = document.querySelector(".rightBtn");
+
+			let numOfQuestions;
+			let questions = quiz;
+			let answers = [];
+			let questionIndex = 0;
+			let rightAnswers = 0;
+			let wrongAnswers = 0;
+			let notAnswered = 0;
+
+			function shuffleQuestions(quiz) {
+				for (let i = quiz.length - 1; i > 0; i--) {
+					const j = Math.floor(Math.random() * (i + 1));
+					[quiz[i], quiz[j]] = [quiz[j], quiz[i]];
+				}
+
+				questions = quiz.slice(0, numOfQuestions);
+			}
+
+			function showQuestion(questionIndex) {
+				let currentQuestion = questions[questionIndex];
+
+				quizPages.childNodes.forEach((page) => page.classList.remove("active"));
+				quizPages.childNodes[questionIndex].classList.add("active");
+
+				optionsBtns.forEach((btn) => {
+					btn.classList.remove("wrong");
+					btn.classList.remove("selected");
+					btn.disabled = false;
+
+					if (answers[questionIndex]) {
+						if (btn.id === questions[questionIndex].correct) {
+							btn.classList.add("selected");
+						}
+
+						if (
+							btn.id === answers[questionIndex] &&
+							answers[questionIndex] !== questions[questionIndex].correct
+						) {
+							btn.classList.add("wrong");
+						}
+
+						btn.disabled = true;
+					}
+				});
+
+				question.innerText = currentQuestion.question;
+				A.textContent = currentQuestion.A;
+				B.textContent = currentQuestion.B;
+				C.textContent = currentQuestion.C;
+				D.textContent = currentQuestion.D;
+			}
+
+			function createQuizPages(questions) {
+				for (let i = 1; i <= numOfQuestions; i++) {
+					const page = document.createElement("button");
+					page.innerText = i;
+
+					quizPages.appendChild(page);
+
+					page.addEventListener("click", function () {
+						questionIndex = i - 1;
+						showQuestion(questionIndex);
+					});
+				}
+			}
+
+			function endGame() {
+				notAnswered = questions.length - (wrongAnswers + rightAnswers);
+
+				correctCount.textContent = rightAnswers;
+				wrongCount.textContent = wrongAnswers;
+				notAnsweredCount.textContent = notAnswered;
+				totalCount.textContent = questions.length;
+
+				step3.style.display = "none";
+				step4.style.display = "block";
+			}
+
+			function startGame() {
+				answers = [];
+				questionIndex = 0;
+				rightAnswers = 0;
+				wrongAnswers = 0;
+				notAnswered = 0;
+				quizPages.innerHTML = "";
+
+				shuffleQuestions(questions);
+				createQuizPages(questions);
+				showQuestion(questionIndex);
+
+				step2.style.display = "none";
+				step3.style.display = "block";
+			}
+
+			start.addEventListener("click", () => {
+				if (numInput.value.length){
+					numOfQuestions = +numInput.value;
+
+					startGame()
+				};
+			});
+
+			next.addEventListener("click", () => {
+				let questionPage = quizPages.children[questionIndex];
+
+				if (questionIndex < questions.length - 1) {
+					if (answers[questionIndex] && questions[questionIndex].correct === answers[questionIndex]) {
+						questionPage.classList.add("correct");
+					} else if (answers[questionIndex] && questions[questionIndex].correct !== answers[questionIndex]) {
+						questionPage.classList.add("wrong");
+					} else {
+						questionPage.classList.add("skipped");
+					}
+
+					questionIndex++;
+					showQuestion(questionIndex);
+				} else {
+					endGame();
+				}
+			});
+
+			previous.addEventListener("click", () => {
+				let questionPage = quizPages.children[questionIndex];
+
+				if (questionIndex > 0) {
+					if (answers[questionIndex] && questions[questionIndex].correct === answers[questionIndex]) {
+						questionPage.classList.add("correct");
+					} else if (answers[questionIndex] && questions[questionIndex].correct !== answers[questionIndex]) {
+						questionPage.classList.add("wrong");
+					} else {
+						questionPage.classList.add("skipped");
+					}
+
+					questionIndex--;
+					showQuestion(questionIndex);
+				}
+			});
+
+			optionsBtns.forEach((option) => {
+				option.addEventListener("click", function () {
+					const correctAnswer = questions[questionIndex]["correct"];
+
+					if (this.id === correctAnswer) {
+						rightAnswers++;
+						this.classList.add("selected");
+					} else {
+						wrongAnswers++;
+						this.classList.add("wrong");
+						document.querySelector(".options #" + correctAnswer).classList.add("selected");
+					}
+
+					answers[questionIndex] = this.id;
+					optionsBtns.forEach((option) => (option.disabled = true));
+				});
+			});
+
+			restart.addEventListener("click", () => {
+				step4.style.display = "none";
+				step2.style.display = "block";
+			});
+		</script>
+	</body>
+</html>
