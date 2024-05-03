@@ -32,8 +32,9 @@ function showQuestion(questionIndex) {
 
 	if (currentQuestion.img){
 		image.src = currentQuestion.img;
+		image.style.display = 'block';
 	} else {
-		image.src = '';
+		image.style.display = 'none';
 	}
 
 	quizPages.childNodes.forEach((page) => page.classList.remove("active"));
