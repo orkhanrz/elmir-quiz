@@ -5,20 +5,19 @@ const step3 = document.querySelector(".step-3");
 const step4 = document.querySelector(".step-4");
 const quizPages = document.querySelector(".controls .pages");
 const question = document.querySelector(".question");
-const options = document.querySelector(".options");
 const optionsBtns = document.querySelectorAll(".options button");
 const previous = document.querySelector(".leftBtn");
 const next = document.querySelector(".rightBtn");
 
 let numOfQuestions;
-let questions = quiz;
+let questions = [];
 let answers = [];
 let questionIndex = 0;
 let rightAnswers = 0;
 let wrongAnswers = 0;
 let notAnswered = 0;
 
-function shuffleQuestions(quiz) {
+function shuffleQuestions() {
 	for (let i = quiz.length - 1; i > 0; i--) {
 		const j = Math.floor(Math.random() * (i + 1));
 		[quiz[i], quiz[j]] = [quiz[j], quiz[i]];
@@ -109,7 +108,7 @@ function startGame() {
 	notAnswered = 0;
 	quizPages.innerHTML = "";
 
-	shuffleQuestions(questions);
+	shuffleQuestions();
 	createQuizPages();
 	showQuestion(questionIndex);
 

@@ -19,7 +19,7 @@ button {
 }
 
 .skipped {
-    background-color: #141269 !important;
+    background-color: rgb(194, 194, 0) !important;
 }
 
 .input-wrapper {
@@ -122,7 +122,7 @@ button {
 }
 
 .step-3 .controls .pages button.active {
-    background-color: rgb(0, 165, 41);
+    background-color: rgb(0, 116, 40);
 }
 
 .step-3 .controls .leftBtn,
