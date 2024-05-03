@@ -82,7 +82,7 @@ button {
     color: white;
     background-color: transparent;
     border: 1px solid white;
-    padding: 8px 0;
+    padding: 8px;
     font-size: 18px;
 }
 
@@ -114,8 +114,9 @@ button {
 
 .step-3 .controls .pages button {
     border-radius: 50%;
-    display: grid;
-    place-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: none;
     background-color: #1d1ba3;
     width: 32px;
