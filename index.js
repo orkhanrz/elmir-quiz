@@ -5,6 +5,7 @@ const step3 = document.querySelector(".step-3");
 const step4 = document.querySelector(".step-4");
 const quizPages = document.querySelector(".controls .pages");
 const question = document.querySelector(".question");
+const image = document.querySelector('img');
 const optionsBtns = document.querySelectorAll(".options button");
 const previous = document.querySelector(".leftBtn");
 const next = document.querySelector(".rightBtn");
@@ -28,6 +29,12 @@ function shuffleQuestions() {
 
 function showQuestion(questionIndex) {
 	let currentQuestion = questions[questionIndex];
+
+	if (currentQuestion.img){
+		image.src = currentQuestion.img;
+	} else {
+		image.src = '';
+	}
 
 	quizPages.childNodes.forEach((page) => page.classList.remove("active"));
 	quizPages.childNodes[questionIndex].classList.add("active");
