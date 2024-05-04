@@ -3593,4 +3593,283 @@ vəsaitini (net cash flow) hesablayın. Qeyd – şirkət gəlir vergisi vermir
 		correct: "B",
 		img: "./images/1_83.png",
 	},
+	// cfa level 1 - portfelin idareetmesi
+	{
+		question:
+			"Analitik aktiv üçün aşağıdakı məlumatı topladı. Aktiv üçün gəlir dəyişkənliyi (variance of returns) nə qədərdir?",
+		A: "A) 121",
+		B: "B) 188",
+		C: "C) 213",
+		D: "D) 228",
+		correct: "A",
+		img: "./images/2_1.png",
+	},
+	{
+		question:
+			"Analitik iki aktivdən ibarət olan portfel haqqında aşağıdakı məlumatı topladı. İki aktiv üçün gəlirlilik korrelasiyası 0.75 və risksiz faiz dərəcəsi 1%-ə bərabər olduqda, portfel üçün gözlənilən standard deviasiya neçə olacaq?",
+		A: "A) 3.07%",
+		B: "B) 4.23%",
+		C: "C) 4.55%",
+		D: "D) 5.10%",
+		correct: "C",
+		img: "./images/2_2.png",
+	},
+	{
+		question:
+			"Analitik A və B səhm indekslərinin aylıq gəlirlilikləri haqqında məlumat topladı. A və B indeksləri arasındakı kovariyans (covariance) nə qədərdir?",
+		A: "A) 10.37",
+		B: "B) 13.82",
+		C: "C) 19.64",
+		D: "D) 17.59",
+		correct: "B",
+		img: "./images/2_3.png",
+	},
+	{
+		question:
+			"Tamamilə diversifikasiya olunmuş portfel aşağıdakılardan hansının aradan qaldırılması ilə nəticələnəcək?",
+		A: "Sistemli variyans (systematic variance)",
+		B: "Sistemsiz variyans (unsystematic variance)",
+		C: "Həm Sistemli, həm də Sistemsiz variyans",
+		D: "Heç biri",
+		correct: "B",
+	},
+	{
+		question: "Betanın tərifinə aşağıdakılardan hansı uyğundur?",
+		A: "Sistemsiz risk (Unsystematic risk) ölçüsüdür.",
+		B: "Aktivin bazar portfeli ilə kovariyansıdır (covariance).",
+		C: "Bazar portfelinin korrelyasiya (correlation coefficient) əmsalıdır.",
+		D: "Risksiz faiz dərəcəsidir.",
+		correct: "B",
+	},
+	{
+		question:
+			"İnvestor risksiz faiz dərəcəsi ilə kreditə götürdüyü pulu bazar portfelinə investisiya edir, bu zaman investorun portfelinin gəlirlilik dərəcəsi necə olacaq?",
+		A: "Artacaq",
+		B: "Azalacaq",
+		C: "Dəyişməyəcək",
+		D: "Heç biri",
+		correct: "A",
+	},
+	{
+		question:
+			"Zamanla investisiya gəlirliliyi və riskinin əsas məmbəyi aşağıdakılardan ən çox hansı ilə əlaqələndirilə bilər?",
+		A: "Səhm seçimi",
+		B: "Aktivlərin bölüşdürülməsi",
+		C: "Risk menecment",
+		D: "Heç biri",
+		correct: "B",
+	},
+	{
+		question:
+			"Risksiz faiz dərəcəsi 5%, bazar portfelinin gəlirliliyi isə 8%-dir. 7% gəlirlilik dərəcəsi hesablanan və 0.5 Betası olan Səhm:",
+		A: "Yüksək qiymətləndirilib (overvalued)",
+		B: "Aşağı qiymətləndirilib (undervalued)",
+		C: "Dəqiq qiymətləndirilib (correctly valued)",
+		D: "Heç biri",
+		correct: "B",
+	},
+	{
+		question: "Minimum variyanslı (variance) sıfır Betası olan portfelin daha çox hansı riski vardır?",
+		A: "Sistemli (systematic) və Sistemsiz (unsystematic) riksi var.",
+		B: "Sistemsiz risk var, Sistemli risk yoxdur.",
+		C: "Sistemli risk var, Sistemsiz risk yoxdur.",
+		D: "Nə Sistemli, nə də Sistemsiz risk var.",
+		correct: "B",
+	},
+	{
+		question: "Aşağıdakılardan hansı Markowitz modelinə əsaslanan investor davranışı haqqında fərziyə deyil?",
+		A: "İnvestorlar gözlənilən gəlirliliyi bir-dövrlük (one-period) artırır.",
+		B: "İnvestorlar qərarlarını sadəcə gözlənilən gəlirlilik və riskə əsaslandırırlar.",
+		C: "İnvestorların gözlənilən gəlirlilik və variyansın (variance) funksiyası olan faydalılıq əyrisi (utility curve) var.",
+		D: "Heç biri",
+		correct: "A",
+	},
+	{
+		question: "Aşağıdakılardan hansı investisiya siyasəti bəyanatını yaratmaq üçün səbəb deyil?",
+		A: "Portfel yaratmaq üçün sərf olunan xərci azaltmaq",
+		B: "İnvestorlara daha realistik investisiya məqsədləri yaratmağa kömək etmək",
+		C: "Menecer performansını qiymətləndirmək üçün performans bençmarkı yaratmaq",
+		D: "Heç biri",
+		correct: "A",
+	},
+	{
+		question: `Analitik iki adi səhm haqqında aşağıdakı məlumatları əldə etdi: 
+		Libby şirkəti üçün gəlirlilik variyansı = 15.5 
+		Metromedia şirkəti üçün gəlirlilik variyansı = 22.3 
+		Libby və Metromedia şirkətləri arasında kovariyans (covariance) = 8.65 
+		Sözügedən iki səhmin gəlirlikləri arasında korrelyasiya əmsalı (correlation cofficient) neçeyə bərabərdir?`,
+		A: "0.025",
+		B: "0.388",
+		C: "0.465",
+		D: "0.288",
+		correct: "C",
+	},
+	{
+		question: "Kapital Aktivinin Qiymətləndirilməsi Modelinə (Capital Asset Pricing Model) əsasən bazar portfeli:",
+		A: "Eyni miqdarda investisiya qoyulmuş bütün riskli aktivləri əhatə edir.",
+		B: "Həm sistemli (systematic), həm də sistemsiz (unsystematic) riskə məruz qalır.",
+		C: "Kapital Market Xettində ( CML) olan başqa portfellərlə mükəmməl müsbət korrelyasiyada (correlataion) olur.",
+		D: "Heç biri",
+		correct: "B",
+	},
+	//   {
+	// 	question: "Oakmont və Sunrise korporasiyalarının səhmləri üzrə gəlirliliklərinin standart deviasiyası (standard deviation) ayrı ayrılıqda 14% və 12%-dir. Əgər iki səhm arasında korrelyasiya 0.25-dir səhmləri üzrə gəlirliliklərinin standart deviasiyası (standard deviation) ayrı ayrılıqda 14% və 12%-dir. Əgər iki səhm arasında korrelyasiya 0.25-dir, 35%-i Oakmont və 65%-i Sunrise şirkətinə investisiya olunan portfelin standart deviasiyası nə qədərdir?",
+	// 	A: "10.2 %",
+	// 	B: "12.7%",
+	// 	C: "35%",
+	// 	D: "22%",
+	// 	correct: ""
+	//   },
+	{
+		question: "Faiz dərəcələrində oynama və sənaye istehsalında dəyişiklik kimi faktorlar yol aça bilər:",
+		A: "Sistemli (systematic) riskə",
+		B: "Sistemsiz (unsystematic) riskə",
+		C: "Həm sistemli, həmdə sistemsiz riskə",
+		D: "Nə sistemli, nə də sistemsiz riskə",
+		correct: "A",
+	},
+	{
+		question: "Aşağıdakəlardan hansı Markowitz modelinə uyğun fərziyə deyil? İnvestorlar:",
+		A: "Bircür (homogeneous ) gözləntiləri var",
+		B: "Bir-dövrlük (one-period) gözlənilən faydanı (expected utility) artırırlar",
+		C: "Qərarlarında yalnızca gözlənilən gəlir və riskə əsaslanırlar",
+		D: "Heç biri",
+		correct: "A",
+	},
+	{
+		question:
+			"Aşağıdakı cədvəl Orion korporasiyasının səhm gəlirlilikləri üzrə ehtimal bölgüsünü (probability distribution) göstərir. Orion Kooperasiyasının səhmi üçün gəlirlilik variyansı (return variance) neçə olacaq?",
+		A: "A) 44.36",
+		B: "B) 50.94 ",
+		C: "C) 88.71",
+		D: "D) 77.75 ",
+		correct: "C",
+		img: "./images/2_17.png",
+	},
+	{
+		question: "Aşağıdakılardan hansı Portfel Menecment Prosesinin rəy mərhələsinin (feedback step) bir hissəsidir?",
+		A: "A) Portfel düzəltmək",
+		B: "B) Performans ölçmək",
+		C: "C) İnvestisiya siyasəti bəyanatının hazırlanması",
+		D: "D) Heç biri",
+		correct: "B",
+	},
+	{
+		question:
+			"Aşağıdakı cədvəldə RTF və KIU səhmləri üçün tarixi məlumat göstərilib. RTF və KIU üçün kovariyans (covariance) neçə olacaq?",
+		A: "A) 0.0025 ",
+		B: "B) 0.0338",
+		C: "C) 0.0675",
+		D: "D) 0.0850",
+		correct: "B",
+		img: "./images/2_20.png",
+	},
+	{
+		question:
+			"Aşağıdakı cədvəldə JKU səhmləri ilə bazar indeksi üçün məlumatlar göstərilib. CAPM-ə əsasən JKU-nun səhmləri:",
+		A: "A) Yüksək qiymətləndirilib (overvalued)",
+		B: "B) Aşağı qiymətləndirilib (undervalued)",
+		C: "C) Ədalətli qiymətləndirilib (fairly valued)",
+		D: "D) Heç biri",
+		correct: "B",
+		img: "./images/2_21.png",
+	},
+	{
+		question: `Analitik müşahidə edir ki, tarixi geometric gəlirlilik sərmayə (equity) üzrə 9%, xəzinə vekseli
+			(treasury bill) üzrə 3% və inflyasiya üzrə 2%-dir. Sərmayə üçün gəlirliliyin həqiqi faiz dərəcəsi
+			(real rate of return ) və risk premyası (risk premium) neçədir?`,
+		A: "A) 5.8% və 3.7%",
+		B: "B) 6.9% və 3.8%",
+		C: "C) 6.9% və 5.8%",
+		D: "D) 7.0% və 4.8% ",
+		correct: "B",
+	},
+	{
+		question: "A səhmi üçün və bazar üçün aşağıdakı məlumatlar verilib. A səhminin betası neçədir?",
+		A: "A) 0.43",
+		B: "B) 1.70",
+		C: "C) 2.35",
+		D: "D) 1.95 ",
+		correct: "B",
+		img: "./images/2_23.png",
+	},
+	{
+		question:
+			"İnvestorun birgə fonda (mutual fund) etdiyi ödənişlər və fondun 4 illik dövr üzrə gəlirliliyi aşağıdakı cədvəldə göstərilib. Bu məlumatlara əsasən investor üçün pul-çəkili gəlir (money-weighted return or internal rate of retun) neçə olacaq?",
+		A: "A) 2.15%",
+		B: "B) 3.96%",
+		C: "C) 7.50%",
+		D: "D) 5.60%",
+		correct: "B",
+		img: "./images/2_24.png",
+	},
+	{
+		question:
+			"İki şirkətin səhmləri haqqında məlumat aşağıdakı kimidir. İki səhmdən ibarət portfelin gəlirliliyi üzrə standart deviyasiya neçə olacaq?",
+		A: "A) 25.04%",
+		B: "B) 26.80%",
+		C: "C) 32.85%",
+		D: "D) 34.66%",
+		correct: "A",
+		img: "./images/2_25.png",
+	},
+	{
+		question:
+			"Səhmin bazarla korrelyasiyası 0.45, səhmin gəlirliliyi üzrə standart deviyasiya isə 12.35%-dir. Bazarın gəlirliliyi üzrə standart deviyasiyası 8.25% olduqda, sözügedən səhmin betası neçə olacaq?",
+		A: "A) 0.30",
+		B: "B) 0.67",
+		C: "C) 1.50",
+		D: "D) 1.68",
+		correct: "B",
+	},
+	{
+		question: "Aşağıdakı faktorlardan hansı fərdin risk almaq bacarığına təsir etmir?",
+		A: "Vaxt horizonu",
+		B: "Şəxsiyyət növü",
+		C: "Gözlənilən gəlir",
+		D: "Heç biri",
+		correct: "B",
+	},
+	{
+		question: "Portfel Menecment prosesinin icra mərhələsinə daxildir:",
+		A: "Aktiv bölüşdürüməsinin (asset allocation) yekunlaşdırılması",
+		B: "Portfelin performansının monitorinqi",
+		C: "İnvestisiya siyasəti bəyanatının hazırlanması",
+		D: "Heç biri",
+		correct: "A",
+	},
+	{
+		question: `A, B və C qiymətli kağızları üçün gəlirliliyin korrelyasiya matriksi aşağıdakı kimidir. 
+
+		Fərz etsək ki, gözlənilən gəlir və standart deviyasiya hər üç qiymətli kağız üçün eynidir, bu zaman
+		portfelin diversifikasiyası üçün hansı iki qiymətli kağızla bərabər bölüşdürülmüş portfel ən effektiv
+		olardı?`,
+		A: "A) A və B",
+		B: "B) A və C",
+		C: "C) B və C",
+		D: "D) Heç biri",
+		correct: "C",
+		img: "./images/2_29.png",
+	},
+	{
+		question:
+			"Keçən il portfel meneceri 12% gəlir əldə etdi. Portfelin betası 1.5 oldu. Həmin dövr üçün bazar gəliri 7.5%, orta risksiz faiz dərəcəsi isə 2.7% oldu. Bu portfel üçün Jensen alfası neçəyə bərabərdir?",
+		A: "0.75%",
+		B: "2.10%",
+		C: "4.50%",
+		D: "3.40%",
+		correct: "B",
+	},
+	{
+		question: `Səhmlər üçün məlumat aşağıdakı kimidir. 
+		Gözlənilən bazar gəliri 9.5% və orta risksiz faiz dərəcəsi 1.2% olduqda, Bu üç səhmdən hansı
+		CAPM və Qiymətli Kağızlar Market Xəttinə (SML) görə bazar qiymətindən daha yüksək
+		qiymətləndirilib?`,
+		A: "A) Heisen İnc.",
+		B: "B) Booraem İnc.",
+		C: "C) Guttman İnc.",
+		D: "D) Heç biri",
+		correct: "B",
+		img: "./images/2_31.png",
+	},
 ];
