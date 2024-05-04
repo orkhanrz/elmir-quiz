@@ -15,6 +15,11 @@ img {
     margin-bottom: 16px;
 }
 
+.error {
+    color: red;
+    font-size: 12px;
+}
+
 .correct {
     background-color: rgb(0, 165, 41) !important;
 }

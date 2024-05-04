@@ -128,7 +128,20 @@ start.addEventListener("click", () => {
 	if (numInput.value.length) {
 		numOfQuestions = +numInput.value;
 
-		startGame();
+		if (numOfQuestions <= 0 || numOfQuestions > quiz.length){
+			numInput.style.border = '1px solid red';
+
+			const errorTextEl = document.createElement('p');
+			errorTextEl.classList.add('error');
+			errorTextEl.innerText = `Quiz maksimum ${quiz.length} sualdan ibarətdir.`;
+			numInput.parentNode.after(errorTextEl); 
+		} else {
+			numInput.style.border = '1px solid #1d1ba3';
+			const error = document.querySelector('.error');
+			error && error.remove(); 
+			startGame();
+		}
+
 	}
 });
 
