@@ -125,6 +125,9 @@ function startGame() {
 }
 
 start.addEventListener("click", () => {
+	const error = document.querySelector('.error');
+	error && error.remove(); 
+
 	if (numInput.value.length) {
 		numOfQuestions = +numInput.value;
 
@@ -137,8 +140,6 @@ start.addEventListener("click", () => {
 			numInput.parentNode.after(errorTextEl); 
 		} else {
 			numInput.style.border = '1px solid #1d1ba3';
-			const error = document.querySelector('.error');
-			error && error.remove(); 
 			startGame();
 		}
 
